@@ -1,3 +1,8 @@
+<!-- dev log 
+added admin page and user page and con't
+/admin - log out button for demo purpose
+-->
+
 {{#if admin}}
 <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark flex-grow-1 justify-content-between navigation-clean sticky-top"
      style="background-color: black!important;opacity: 0.88;filter: blur(0px);">
@@ -7,11 +12,9 @@
         <div class="collapse navbar-collapse flex-grow-1 justify-content-between"
              id="navcol-1">
             <ul class="nav navbar-nav flex-grow-1 justify-content-between ml-auto">
-                <li role="presentation" class="nav-item"><a class="nav-link" href="/">Tech Lead</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="/">Tech Lead</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="/">Tech Lead</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="/">Tech Lead</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="/">Tech Lead</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="/admin">Dashboard</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="/admin/addProduct">Products</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="/">logout</a></li>
             </ul>
         </div>
     </div>
@@ -28,11 +31,11 @@
             <ul class="nav navbar-nav flex-grow-1 justify-content-between ml-auto">
                 <li role="presentation" class="nav-item"><a class="nav-link" href="/">Status Audio</a></li>
                 <li role="presentation" class="nav-item"><a class="nav-link" href="/product">Shop</a></li>
-                <li role="presentation" class="nav-item"><a class="nav-link" href="">Cart</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="/cart">Cart</a></li>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" aria-expanded="false"
                                                  class="dropdown-toggle nav-link" href="#">Others</a>
                     <div role="menu" class="dropdown-menu">
-                        <a role="presentation" class="dropdown-item" href="">Feedback</a>
+                        <a role="presentation" class="dropdown-item" href="/feedback"">Feedback</a>
 						<a role="presentation" class="dropdown-item" href="">Other02</a>
 						<a role="presentation" class="dropdown-item" href="">Other03</a>
                     </div>
