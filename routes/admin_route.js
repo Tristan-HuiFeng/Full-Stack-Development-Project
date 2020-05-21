@@ -15,12 +15,12 @@ let inventory = [{'itemID':'1','itemName':'Tristan','itemCost':'FOC', 'itemStock
 {'itemID':'3','itemName':'Hieu','itemCost':'FOC', 'itemStock':'69'},
 {'itemID':'4','itemName':'Matthew','itemCost':'FOC', 'itemStock':'69'}] //dummy data
 
-router.get('/', (req,res) => {
-    res.render('index', {admin, inventory})
-});
 
 router.get('/addProduct', (req,res) =>{
     res.render('product/addProduct', {admin, storeCategories})
+
+router.get('/', (req, res) => {
+    res.render('admin/overview', {title:"admin", navbar:"admin"}); 
 });
 
 

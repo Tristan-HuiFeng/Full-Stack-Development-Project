@@ -43,6 +43,7 @@ const adminRoute = require('./routes/admin_route');
 // Bring in Handlebars Helpers here
 // Copy and paste this statement only!!
 const {formatDate} = require('./helpers/hbs');
+const {if_Equal} = require('./helpers/hbs_conditional_operator');
 
 
 /*
@@ -63,7 +64,8 @@ const app = express();
 * */
 app.engine('handlebars', exphbs({
 	helpers: {
-		formatDate: formatDate
+		formatDate: formatDate,
+		if_Equal: if_Equal
 	},
 	handlebars: allowInsecurePrototypeAccess(Handlebars),
 	defaultLayout: 'main' // Specify default template views/layout/main.handlebar 
