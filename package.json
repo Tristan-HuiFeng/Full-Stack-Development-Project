@@ -33,7 +33,7 @@
     "firebaseui": "^4.5.1",
     "flash-messenger": "^1.1.1",
     "fs": "0.0.1-security",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "instantsearch.js": "^4.7.0",
     "jquery": "^3.5.1",
     "jsonwebtoken": "^8.5.1",
